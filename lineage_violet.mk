@@ -15,14 +15,19 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-#Rising 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon 675" \
-    RisingMaintainer="Chronix"
-TARGET_ENABLE_BLUR := false
-PRODUCT_NO_CAMERA := false
+#Matrixx
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_ENABLE_BLUR := flase
+TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GMS := true
-WITH_GAPPS := true
+WITH_GMS_COMMS_SUITE := true
+TARGET_SUPPORTS_WALLEFFECT := true
+BYPASS_CHARGE_SUPPORTED  := false
+MATRIXX_BUILD_TYPE := Unofficial
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_STOCK_AICORE := true 
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
