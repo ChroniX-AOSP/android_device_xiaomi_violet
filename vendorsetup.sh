@@ -5,3 +5,5 @@ git clone https://github.com/xiaomi-sm6150/proprietary_vendor_xiaomi_violet.git 
 git clone https://github.com/xiaomi-sm6150/proprietary_vendor_xiaomi_sm6150-common.git vendor/xiaomi/sm6150-common
 #Kernel
 git clone https://github.com/xiaomi-sm6150/android_kernel_xiaomi_sm6150.git kernel/xiaomi/sm6150-common
+#Hardware
+git clone https://github.com/AOSP-for-vili/android_hardware_xiaomi.git -b lineage-22.2 hardware/xiaomi
